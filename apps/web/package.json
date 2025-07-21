@@ -37,6 +37,7 @@
     "embla-carousel-react": "^8.6.0",
     "input-otp": "^1.4.2",
     "lucide-react": "^0.525.0",
+    "motion": "^12.23.6",
     "postcss": "^8.5.6",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
@@ -47,7 +48,7 @@
   },
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build",
-    "start": "vite start"
+    "build": "vite build && tsc --noEmit",
+    "start": "bun run .output/server/index.mjs"
   }
 }
